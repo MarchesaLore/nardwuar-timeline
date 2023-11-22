@@ -1,6 +1,6 @@
 [build]
   command = "ng build --configuration production"
-  publish = "dist/nardwuar-timeline"
+  publish = "dist/nardwuar-angular"
 
 [[redirects]]
   from = "/*"
