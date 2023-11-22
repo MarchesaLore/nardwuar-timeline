@@ -1,15 +1,13 @@
 <div class="container">
     <h1>Nardwuar's Interview Timeline</h1>
 </div>
-<div class="timeline-container">
-  <div class="styled-scrollbars">
-    <app-interview [interviews]="interviews" (interviewSelected)="onInterviewSelected($event)"></app-interview>
-  </div>
-
-</div>
-
-<div class="container">
-    <div class="selected-video">
+<div class="container timeline-page-container">
+    <div class="timeline-container">
+      <div class="styled-scrollbars">
+        <app-interview [interviews]="interviews" (interviewSelected)="onInterviewSelected($event)"></app-interview>
+      </div>
+    </div>
+    <div class="selected-video" [ngClass]="{'sticky': isSticky}">
         <!-- Display selected interview details here -->
         <h2>{{ selectedInterview?.artist }}</h2>
         <p>{{ selectedInterview?.date }}</p>
@@ -20,5 +18,5 @@
 
     </div>
 
-    <p><a routerLink="/">Go back to Welcome Page</a></p>
   </div>
+  
