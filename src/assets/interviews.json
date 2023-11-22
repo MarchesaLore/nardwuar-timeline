@@ -1,0 +1,219 @@
+[
+    {
+      "id": 1,
+      "artist": "J. Cole",
+      "date": "2021-12-26",
+      "imageUrl": "https://nardwuar.com/rad/wp-content/uploads/2022/02/IMG_4161_02_A.jpg",
+      "videoUrl": "GxVXEd_G_60"
+    },
+    {
+      "id": 2,
+      "artist": "A$AP Rocky",
+      "date": "2021-03-20",
+      "imageUrl": "",
+      "videoUrl": "p8IYpVF_S5M"
+    },
+    {
+      "id": 3,
+      "artist": "Rico Nasty",
+      "date": "2019-03-20",
+      "imageUrl": "",
+      "videoUrl": "L8nOwiIdJAE"
+    },
+    {
+      "id": 4,
+      "artist": "Juice WRLD",
+      "date": "2018-6-12",
+      "imageUrl": "",
+      "videoUrl": "kN7NfAj5pKY"
+    },
+    {
+      "id": 5,
+      "artist": "Kendrick Lamar",
+      "date": "2012-03-23",
+      "imageUrl": "",
+      "videoUrl": "6s5vlQdQp4s"
+    },
+    {
+      "id": 6,
+      "artist": "Mac Miller",
+      "date": "2011-07-13",
+      "imageUrl": "",
+      "videoUrl": "-NSZyYIHncU"
+    },
+    {
+      "id": 7,
+      "artist": "Questlove",
+      "date": "2014-11-02",
+      "imageUrl": "https://nardwuar.com/rad/wp-content/uploads/2019/07/IMG_8958-600x450.jpg",
+      "videoUrl": "oKLoTQVSe1c"
+    },
+    {
+      "id": 8,
+      "artist": "Lil Uzi Vert",
+      "date": "2023-07-02",
+      "imageUrl": "",
+      "videoUrl": "62ti0DAAvVY"
+    },
+    {
+      "id": 9,
+      "artist": "Snoop Dogg",
+      "date": "2023-07-11",
+      "imageUrl": "",
+      "videoUrl": "q24KPM02UIk"
+    },
+    {
+      "id": 10,
+      "artist": "Snoop Dogg",
+      "date": "2020-02-06",
+      "imageUrl": "",
+      "videoUrl": "Pl35rlTmDfI"
+    },
+    {
+      "id": 11,
+      "artist": "Snoop Dogg",
+      "date": "2019-02-25",
+      "imageUrl": "",
+      "videoUrl": "_hNevbnMHWk"
+    },
+    {
+      "id": 12,
+      "artist": "Snoop Dogg",
+      "date": "2017-03-23",
+      "imageUrl": "",
+      "videoUrl": "1AzhqtEaOhY"
+    },
+    {
+      "id": 13,
+      "artist": "Snoop Dogg",
+      "date": "2016-04-20",
+      "imageUrl": "",
+      "videoUrl": "-wjyErw-nrc"
+    },
+    {
+      "id": 14,
+      "artist": "Snoop Dogg",
+      "date": "2015-10-29",
+      "imageUrl": "",
+      "videoUrl": "https://youtu.be/_BiW5fGGJ1A"
+    },
+    {
+      "id": 15,
+      "artist": "Snoop Dogg",
+      "date": "2011-03-03",
+      "imageUrl": "",
+      "videoUrl": "7QawBM-kRts"
+    },
+    {
+      "id": 16,
+      "artist": "N.E.R.D.",
+      "date": "2015-07-19",
+      "imageUrl": "",
+      "videoUrl": "5RKbSi87J5Q"
+    },
+    {
+      "id": 17,
+      "artist": "LAUFEY",
+      "date": "2023-10-24",
+      "imageUrl": "",
+      "videoUrl": "lxXhV5aB1g8"
+    },
+    {
+      "id": 18,
+      "artist": "ED SHEERAN",
+      "date": "2023-10-21",
+      "imageUrl": "",
+      "videoUrl": "7_wu81XMUeM"
+    },
+    {
+      "id": 19,
+      "artist": "boygenius",
+      "date": "2023-08-01",
+      "imageUrl": "",
+      "videoUrl": "__iC3LsCitg"
+    },
+    {
+      "id": 20,
+      "artist": "Summer Smash",
+      "date": "2023-07-23",
+      "imageUrl": "",
+      "videoUrl": "WZSwfauctgE"
+    },
+    {
+      "id": 21,
+      "artist": "BabyTron",
+      "date": "2023-07-21",
+      "imageUrl": "",
+      "videoUrl": "yOvSZuXtF_g"
+    },
+    {
+      "id": 22,
+      "artist": "$uicideBoy$",
+      "date": "2023-07-19",
+      "imageUrl": "",
+      "videoUrl": "eF7aSemP5ZU"
+    },
+    {
+      "id": 23,
+      "artist": "BLP Kosher",
+      "date": "2023-07-15",
+      "imageUrl": "",
+      "videoUrl": "5H9ZBcDy0oI"
+    },
+    {
+      "id": 24,
+      "artist": "Jazzy",
+      "date": "2023-07-05",
+      "imageUrl": "",
+      "videoUrl": "TqEpFJJTswc"
+    },
+    {
+      "id": 25,
+      "artist": "GloRilla",
+      "date": "2023-07-04",
+      "imageUrl": "",
+      "videoUrl": "pJJnNFbty6o"
+    },
+    {
+      "id": 26,
+      "artist": "Lil Durk",
+      "date": "2023-07-02",
+      "imageUrl": "",
+      "videoUrl": "wfEAzXHsxFE"
+    },
+    {
+      "id": 27,
+      "artist": "Ski Mask the Slump God",
+      "date": "2023-07-02",
+      "imageUrl": "",
+      "videoUrl": "Qz4TREVClNc"
+    },
+    {
+      "id": 28,
+      "artist": "Lil Uzi Vert",
+      "date": "2023-07-02",
+      "imageUrl": "",
+      "videoUrl": "62ti0DAAvVY"
+    },
+    {
+      "id": 29,
+      "artist": "Nickelback",
+      "date": "2023-05-06",
+      "imageUrl": "",
+      "videoUrl": "6X2PrFAn_uA"
+    },
+    {
+      "id": 30,
+      "artist": "Alvvays",
+      "date": "2023-03-31",
+      "imageUrl": "",
+      "videoUrl": "SwESJItFqXE"
+    },
+    {
+      "id": 31,
+      "artist": "Don Toliver",
+      "date": "2023-03-09",
+      "imageUrl": "",
+      "videoUrl": "6rIvnUdxMlo"
+    }
+]

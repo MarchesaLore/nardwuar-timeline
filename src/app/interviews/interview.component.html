@@ -1,0 +1,11 @@
+<!-- timeline.component.html -->
+
+<div class="timeline" [style.width.px]="calculateTimelineWidth()">
+  <div *ngFor="let interview of interviews; let i = index" class="timeline-item"  [style.left.px]="calculatePosition(interview.date)" (click)="selectInterview(interview)">
+    <div class="dot">
+      <div class="description" [ngClass]="{'even': i % 2 === 0}">
+        {{ interview.artist }} <br/> <span>{{ interview.date }}</span>
+      </div>
+    </div>
+  </div>
+</div>

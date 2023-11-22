@@ -1,0 +1,41 @@
+.selected-video{
+    text-align: center;
+    margin: auto;
+    padding: 50px 0;
+    p, h2, h3, img{
+        margin: auto;
+        text-align: center;
+        padding:10px;
+    }
+}
+
+.timeline-container{
+    width: 100vw;
+    overflow: hidden;
+    min-height: 200px;
+    position: relative;
+    >div{
+        min-height: 250px;
+        padding-top: 100px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        position: relative;
+        div{
+            overflow: visible;
+        }
+    }
+}
+.styled-scrollbars {
+    /* Foreground, Background */
+    scrollbar-color: #999 #333;
+  }
+  .styled-scrollbars::-webkit-scrollbar {
+    width: 10px; /* Mostly for vertical scrollbars */
+    height: 10px; /* Mostly for horizontal scrollbars */
+  }
+  .styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+    background: #999;
+  }
+  .styled-scrollbars::-webkit-scrollbar-track { /* Background */
+    background: #333;
+  }

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nardwuar-angular';
+  title = 'Nardwuar the Human Serviette';
+  currentYear = new Date().getFullYear();
 }
