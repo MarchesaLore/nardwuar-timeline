@@ -2,26 +2,42 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This is a personal project, just to practice and show my Angular skills.
 
-## Code scaffolding
+On a side note, Nardwuar is a Canadian Jourlanist that is very funny and has interviewed many many musicians, his interviews are not only hilarous but have some incredible deep cuts one of my favorite is the one with Questlove he can't quite believe how deep Nardwuar knowledge in music and history is and he can't keep focus on the conversation! highly suggested!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+I have created a new Angular project.
+Added routing so that I can have multiple pages, currently having Welcome and Timeline.
 
-## Build
+Welcome is also the landing page.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<img width="442" alt="image" src="https://github.com/MarchesaLore/nardwuar-timeline/assets/22336407/abbcf6db-f5e0-4284-b33e-afc4834344c9">
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+the timeline page
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<img width="445" alt="image" src="https://github.com/MarchesaLore/nardwuar-timeline/assets/22336407/886653c0-df6a-48df-a826-5f46ac5db7d1">
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+I have created a timeline, there are a few things happening here:
+
+the interviews are just in a json
+I am loading those interviews in the timeline controller and sorting them by date.
+
+the space between one interview and the next one is a day difference with the method calculatePosition I assign to the interview a position from the top.
+
+*youtube video:*
+I have a youtubevideo component, needed or the video would not load due to security issues
+it is using:
+
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+
+so that I can dinamically load the video in SafeResourceUrl, with this.sanitizer.bypassSecurityTrustResourceUrl(youtubeUrl);
+
+when clicking on the interview on the timeline, the video get loaded in the main section of the container, that is to show the communication between two elements
+  @Output() interviewSelected = new EventEmitter<any>();
+  and the method
+  onInterviewSelected
+  
