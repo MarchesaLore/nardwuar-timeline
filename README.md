@@ -43,8 +43,7 @@ Communication Between Components: Demonstrates effective communication between c
 
 Inspiration from Nardwuar: Draws inspiration from the entertaining and insightful interviews conducted by Nardwuar, particularly highlighted by his remarkable depth of knowledge in music and history.
 
-Project Repository
-Explore the <a href="https://github.com/MarchesaLore/nardwuar-timeline/tree/main" target="_blank">Github repository</a> to delve into the project structure, source code, and implementation details.
+
 
 
 
