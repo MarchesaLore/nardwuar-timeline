@@ -45,6 +45,9 @@ footer{
     margin-top: 50px;
     .container{
         display: flex;
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
         justify-content: space-between;
         color: #6e6e6e;
         ul{            

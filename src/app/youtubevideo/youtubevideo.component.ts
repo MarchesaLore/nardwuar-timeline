@@ -4,11 +4,12 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-youtube-embed',
   template: `
-    <iframe [src]="getVideoUrl()" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+    <iframe [src]="getVideoUrl()" width="videowidth" height="315" frameborder="0" allowfullscreen></iframe>
   `,
 })
 export class YoutubeEmbedComponent {
   @Input() youtubeVideoId!: string; // Accept youtubeVideoId as an input parameter
+  @Input() videowidth: number = 560;
 
   constructor(private sanitizer: DomSanitizer) {}
 

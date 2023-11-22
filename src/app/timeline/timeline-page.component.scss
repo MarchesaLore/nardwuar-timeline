@@ -2,6 +2,9 @@
   width:100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  @media(max-width: 900px){
+    grid-template-columns: 1fr;
+  }
 }
 .selected-video{
     text-align: center;
@@ -13,6 +16,21 @@
         margin: auto;
         text-align: center;
         padding:10px;
+    }
+    &.desktop-only{
+      display: none;
+      @media(min-width: 900px){
+        display: block;
+      }
+    }
+    &.mobile-only{
+      display: none;
+      @media(max-width: 900px){
+        display: block;
+        iframe{          
+          max-width: 100%;
+        }
+      }
     }
 }
 
