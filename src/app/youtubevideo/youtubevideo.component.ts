@@ -4,7 +4,7 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-youtube-embed',
   template: `
-    <iframe [src]="getVideoUrl()" width="videowidth" height="315" frameborder="0" allowfullscreen></iframe>
+    <iframe [src]="getVideoUrl()" [width]="videowidth" height="315" frameborder="0" allowfullscreen></iframe>
   `,
 })
 export class YoutubeEmbedComponent {
