@@ -1,22 +1,19 @@
-
-
-/* timeline.component.css */
+/* timeline.component.scss */
 
 .timeline {
   position: absolute;
   display: flex;
   flex-direction: column;
-  //align-items: center;
   background-color: #ccc;
   width: 20px;
   margin-left: 50%;
+
   .timeline-item {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
 }
-
 
 .dot {
   width: 20px;
@@ -30,7 +27,7 @@
   cursor: pointer;
   position: relative;
 
-  .description{
+  .description {
     position: absolute;
     width: max-content;
     background-color: #fff;
@@ -39,20 +36,19 @@
     border-radius: 4px;
     top: 0;
     left: 25px;
-    &.even{      
+
+    &.even {
       left: -5px;
       transform: translateX(-100%);
-
     }
-    
-  
 
-
-    span{
+    span {
       font-size: 10px;
     }
+
     z-index: 9;
-    &:hover{
+
+    &:hover {
       z-index: 99;
     }
   }

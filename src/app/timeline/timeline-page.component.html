@@ -1,38 +1,34 @@
 <div class="container">
-    <h1>Nardwuar's Interview Timeline</h1>
+  <h1>Nardwuar's Interview Timeline</h1>
 </div>
+
 <div class="container">
   <div class="selected-video mobile-only">
       <p class="legend">Select the interview on the timeline to watch the video!</p>
       <!-- Display selected interview details here -->
       <h2>{{ selectedInterview?.artist }}</h2>
       <p>{{ selectedInterview?.date }}</p>
-  
       <div *ngIf="selectedInterview?.videoUrl" class="video-container">
-        <app-youtube-embed [youtubeVideoId]="selectedInterview.videoUrl" [videowidth]="375"></app-youtube-embed>
+          <app-youtube-embed [youtubeVideoId]="selectedInterview.videoUrl" [videowidth]="375"></app-youtube-embed>
       </div>
-  
   </div>
-
 </div>
+
 <div class="container timeline-page-container">
-    <div class="timeline-container">
+  <div class="timeline-container">
       <div class="styled-scrollbars">
-        <p class="legend">scroll down for more interviews</p>
-        <app-interview [interviews]="interviews" (interviewSelected)="onInterviewSelected($event)"></app-interview>
+          <p class="legend">Scroll down for more interviews</p>
+          <app-interview [interviews]="interviews" (interviewSelected)="onInterviewSelected($event)"></app-interview>
       </div>
-    </div>
-    <div class="selected-video desktop-only">
-        <p class="legend">Select the interview on the timeline to watch the video!</p>
-        <!-- Display selected interview details here -->
-        <h2>{{ selectedInterview?.artist }}</h2>
-        <p>{{ selectedInterview?.date }}</p>
-
-        <div *ngIf="selectedInterview?.videoUrl" class="video-container">
-          <app-youtube-embed [youtubeVideoId]="selectedInterview.videoUrl" [videowidth]="600"></app-youtube-embed>
-        </div>
-
-    </div>
-
   </div>
-  
+
+  <div class="selected-video desktop-only">
+      <p class="legend">Select the interview on the timeline to watch the video!</p>
+      <!-- Display selected interview details here -->
+      <h2>{{ selectedInterview?.artist }}</h2>
+      <p>{{ selectedInterview?.date }}</p>
+      <div *ngIf="selectedInterview?.videoUrl" class="video-container">
+          <app-youtube-embed [youtubeVideoId]="selectedInterview.videoUrl" [videowidth]="600"></app-youtube-embed>
+      </div>
+  </div>
+</div>

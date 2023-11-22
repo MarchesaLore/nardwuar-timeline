@@ -1,76 +1,89 @@
-h1{
+h1 {
   text-align: center;
 }
-.timeline-page-container{
-  width:100%;
+
+.timeline-page-container {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  @media(max-width: 900px){
+
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
 }
-.selected-video{
+
+.selected-video {
+  text-align: center;
+  padding: 50px 0;
+  position: sticky;
+  right: 0;
+  width: 100%;
+
+  p, h2, h3, img {
+    margin: auto;
     text-align: center;
-    padding: 50px 0;
-    position: sticky;
-    right: 0;
-    width: 100%;
-    p, h2, h3, img{
-        margin: auto;
-        text-align: center;
-        padding:10px;
-    }
-   
+    padding: 10px;
+  }
 }
-.desktop-only{
+
+.desktop-only {
   display: none;
-  @media(min-width: 900px){
+
+  @media (min-width: 900px) {
     display: block;
   }
 }
-.mobile-only{
+
+.mobile-only {
   display: none;
-  @media(max-width: 900px){
+
+  @media (max-width: 900px) {
     display: block;
-    iframe{          
+
+    iframe {
       max-width: 100%;
     }
   }
 }
-.timeline-container{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    >div{
-      width: 100%;
-      min-height: 500px;
-      overflow-y: scroll;
-      overflow-x: hidden;
-      position: relative;
-      div{
-          overflow: visible;
-      }
 
+.timeline-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  > div {
+    width: 100%;
+    min-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+
+    div {
+      overflow: visible;
     }
+  }
 }
 
 .styled-scrollbars {
   /* Foreground, Background */
   scrollbar-color: #999 #333;
 }
+
 .styled-scrollbars::-webkit-scrollbar {
   width: 10px; /* Mostly for vertical scrollbars */
   height: 10px; /* Mostly for horizontal scrollbars */
 }
+
 .styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
   background: #999;
 }
+
 .styled-scrollbars::-webkit-scrollbar-track { /* Background */
   background: #333;
 }
 
-.legend{
-  color:#aaa;
+.legend {
+  color: #aaa;
   text-align: center;
 }
