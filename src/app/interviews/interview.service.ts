@@ -10,6 +10,10 @@ import { IInterview } from "./interview";
 export class InterviewService {
   private interviewUrl = '/assets/interviews.json';
 
+  //I created a key on google cloud platform under API 
+  private apiKey = 'AIzaSyAIVn4zEKmCEHTQee3dWPJe384HS3_fxlw';
+  private channelId = 'UCeAsPJxI6K3Ii4TGTcL7q3g';
+
   constructor(private http: HttpClient) { }
 
   getInterviews(): Observable<IInterview[]> {
@@ -19,9 +23,13 @@ export class InterviewService {
       );
   }
 
-  // Get one interview
-  // Since we are working with a json file, we can only retrieve all interviews
-  // So retrieve all interviews and then find the one we want using 'map'
+  getChannelVideos(): Observable<any> {
+    //Call is returning an empty array, I think I need permission it is working with a different channel, so I am just going to use the json
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${this.channelId}&key=${this.apiKey}&type=video`;
+    return this.http.get(url);
+  }
+
+  
   getInterview(id: number): Observable<IInterview | undefined> {
     return this.getInterviews()
       .pipe(
