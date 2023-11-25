@@ -1,6 +1,6 @@
 // interview.component.ts
 
-import { Component, EventEmitter, Input, Output, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-interview',
@@ -8,7 +8,7 @@ import { Component, EventEmitter, Input, Output, OnChanges, SimpleChanges } from
   styleUrls: ['./interview.component.scss']
 })
 export class InterviewComponent {
-  @Input() interviews!: any[]; // Array of interview objects with date, artist
+  @Input() interviews!: any[]; 
   @Output() interviewSelected = new EventEmitter<any>();
 
   //method returns the number of days between most recent interview and current date
@@ -33,19 +33,27 @@ export class InterviewComponent {
     return daysDifference*10; // 10px x giorno
    }
 
+   //method communicate with parent componenet timeline 
+   //when click on the description the parent component timeline shows loads the video
   selectInterview(interview: any): void {
     this.interviewSelected.emit(interview);
   }
+
+  //on changes cause when I first load the array interview is empty
+  //once it loads async I also can calculate the lenght of the timeline
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['interviews']) {
       this.calculateTimelineWidth();
     }
   }
+
+
   calculateTimelineWidth(): number {
-    let diffdate = 1400;
+    let diffdate = 500; //height of the container (if it is empty at least it'll be 500px)
     //console.log(this.interviews.length);
     if (this.interviews && this.interviews.length >= 2) {
       const lastInterview = this.interviews[this.interviews.length - 1];
+      //get the days between first and last interview
       diffdate = this.calculatePosition(lastInterview.date);
       //console.log('diffdate '+diffdate);
     }

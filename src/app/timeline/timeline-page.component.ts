@@ -1,4 +1,4 @@
-import { Component, OnInit, EventEmitter, Output, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { InterviewService } from '../interviews/interview.service';
 
 @Component({
@@ -9,7 +9,6 @@ import { InterviewService } from '../interviews/interview.service';
 export class TimelinePageComponent{
   interviews: any[] = [];
   selectedInterview: any;
-  
   isDesktop = window.innerWidth > 900;
 
   onInterviewSelected(interview: any): void {
@@ -39,6 +38,8 @@ export class TimelinePageComponent{
   onResize(event: Event): void {
     this.isDesktop = window.innerWidth > 900;
   }
+  //the video is an iframe, so I can't change the widht with css 
+  //I need to know the parameter before building the iframe
   getVideoWidth(): number {
     return this.isDesktop ? 600 : 375;
   }

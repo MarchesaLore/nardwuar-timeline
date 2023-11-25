@@ -3,16 +3,15 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-youtube-embed',
-  template: `
-    <iframe [src]="getVideoUrl()" [width]="videowidth" height="315" frameborder="0" allowfullscreen></iframe>
-  `,
+  templateUrl: './youtubevideo.component.html',
 })
 export class YoutubeEmbedComponent {
-  @Input() youtubeVideoId!: string; // Accept youtubeVideoId as an input parameter
+  @Input() youtubeVideoId!: string; 
   @Input() videowidth: number = 560;
 
   constructor(private sanitizer: DomSanitizer) {}
 
+  //sanatize to prevent security issues
   getVideoUrl(): SafeResourceUrl {
     const youtubeUrl = `https://www.youtube.com/embed/${this.youtubeVideoId}`;
     return this.sanitizer.bypassSecurityTrustResourceUrl(youtubeUrl);
