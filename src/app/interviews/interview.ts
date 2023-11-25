@@ -1,6 +1,6 @@
 export interface IInterview {
     interviewId: number;
-    InterviewArtist: string;
+    artist: string;
     date: string;
     videoUrl: string;
   }

@@ -8,16 +8,21 @@ h1 {
   grid-template-columns: 1fr 2fr;
 
   @media (max-width: 900px) {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
 .selected-video {
   text-align: center;
-  padding: 50px 0;
   position: sticky;
   right: 0;
   width: 100%;
+  padding-bottom: 20px;
+  @media (min-width: 900px) {
+    padding: 50px 0;
+  }
 
   p, h2, h3, img {
     margin: auto;

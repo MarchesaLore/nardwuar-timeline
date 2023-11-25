@@ -11,8 +11,10 @@ export class InterviewComponent {
   @Input() interviews!: any[]; // Array of interview objects with date, artist
   @Output() interviewSelected = new EventEmitter<any>();
 
+  //method returns the number of days between most recent interview and current date
+  //this number will be the number of pixels from the top 
+  //goal is to have the interivews separated between each other as the days difference 
   calculatePosition(currentDate: string): number {
-
     const mostrecentI = this.interviews[0].date;
     if (mostrecentI == currentDate) {
       return 0; 
@@ -20,16 +22,16 @@ export class InterviewComponent {
 
       const currentDateObj = new Date(currentDate);
       const mostrecentIObj = new Date(mostrecentI);
-      console.log(currentDate);
-      console.log(mostrecentIObj);
+      //console.log(currentDate);
+      //console.log(mostrecentIObj);
       // Calculate the difference in days
       const timeDifference = mostrecentIObj.getTime() - currentDateObj.getTime() ;
       const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-      console.log(daysDifference);
+      //console.log(daysDifference);
 
     // Use the difference in days as the pixel distance between dots
-    return daysDifference*10;
-  }
+    return daysDifference*10; // 10px x giorno
+   }
 
   selectInterview(interview: any): void {
     this.interviewSelected.emit(interview);
