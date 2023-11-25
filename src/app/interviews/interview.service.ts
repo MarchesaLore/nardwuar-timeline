@@ -52,7 +52,7 @@ export class InterviewService {
      //const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${this.channelId}&key=${this.apiKey}&type=video`;
    
      //changed to search results filtered by channel (nardwuar channel) I have a limit of 50 here...
-     const urlNew = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCVvWJsqELuR_ofZcne68Mkp2J3WYdNuCc&q=nardwuar vs.&type=video&part=snippet&channelId=UC8h8NJG9gacZ5lAJJvhD0fQ&maxResults=50`
+     const urlNew = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyBMjKUfZk_rYtoRtVCcQYLdQnMVjB9qVB8&q=nardwuar vs.&type=video&part=snippet&channelId=UC8h8NJG9gacZ5lAJJvhD0fQ&maxResults=50`
     
     return this.http.get<any>(urlNew).pipe(
       map(response => {
