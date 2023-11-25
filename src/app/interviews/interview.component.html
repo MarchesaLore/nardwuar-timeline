@@ -4,7 +4,8 @@
   [style.top.px]="calculatePosition(interview.date)" (click)="selectInterview(interview)">
     <div class="dot">
       <div class="description" [ngClass]="{'even': i % 2 === 0}">
-        {{ interview.artist }} <br/> <span>{{ interview.date }}</span>
+       <span class="artist">{{ interview.artist }} </span> <br/> 
+       <span class="date">{{ interview.date }}</span>
       </div>
     </div>
   </div>
