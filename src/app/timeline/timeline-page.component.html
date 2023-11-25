@@ -15,8 +15,7 @@
   <div class="selected-video">
       <p class="legend">Select the interview on the timeline to watch the video!</p>
       <!-- Display selected interview details here -->
-      <h2>{{ selectedInterview?.artist }}</h2>
-      <p>{{ selectedInterview?.date }}</p>
+      <h2>{{ selectedInterview?.artist }} {{ selectedInterview?' | ':''}} {{ selectedInterview?.date }}</h2>
       <div *ngIf="selectedInterview?.videoUrl" class="video-container">
           <app-youtube-embed [youtubeVideoId]="selectedInterview.videoUrl" [videowidth]="getVideoWidth()"></app-youtube-embed>
       </div>
