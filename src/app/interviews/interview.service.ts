@@ -29,7 +29,7 @@ export class InterviewService {
   getInterview(id: number): Observable<IInterview | undefined> {
     return this.getInterviews()
       .pipe(
-        map((interviews: IInterview[]) => interviews.find(p => p.interviewId === id))
+        map((interviews: IInterview[]) => interviews.find(p => p.id === id))
       );
   }
 
@@ -58,9 +58,9 @@ export class InterviewService {
       map(response => {
         return response.items.map((item: any, index: number) => {
           //getting the artist name by the title, they have the same format
-          const artiststr = this.cleanTitle(item.snippet.title);
+          let artiststr = this.cleanTitle(item.snippet.title);
           return {
-            interviewId: index + 1,
+            id: index + 1,
             artist: artiststr,
             date: this.formatDate(item.snippet.publishedAt),
             videoUrl: item.id.videoId

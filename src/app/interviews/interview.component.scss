@@ -7,12 +7,12 @@
   background-color: #ccc;
   width: 20px;
   margin-left: 50%;
+}
 
-  .timeline-item {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.timeline-item {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .dot {
@@ -37,18 +37,12 @@
     border-radius: 4px;
     top: -15px;
     left: 35px;
-    .artist{
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .date{
-      font-size: 10px;
-    }
+
     &:before {
       content: "";
       display: block;
-      width: 0; 
-      height: 0; 
+      width: 0;
+      height: 0;
       border-top: 12px solid transparent;
       border-bottom: 12px solid transparent;
       border-right: 12px solid #000;
@@ -58,6 +52,7 @@
       left: -14px;
       right: auto;
     }
+
     &.even {
       left: -15px;
       transform: translateX(-100%);
@@ -65,8 +60,8 @@
       &:before {
         content: "";
         display: block;
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-top: 12px solid transparent;
         border-bottom: 12px solid transparent;
         border-left: 12px solid #000;
@@ -75,6 +70,15 @@
         left: auto;
         right: -14px;
       }
+    }
+
+    .artist {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .date {
+      font-size: 10px;
     }
 
     span {

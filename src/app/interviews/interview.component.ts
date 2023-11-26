@@ -1,6 +1,7 @@
 // interview.component.ts
 
 import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/core';
+import { IInterview } from './interview';
 
 @Component({
   selector: 'app-interview',
@@ -8,24 +9,24 @@ import { Component, EventEmitter, Input, Output, SimpleChanges } from '@angular/
   styleUrls: ['./interview.component.scss']
 })
 export class InterviewComponent {
-  @Input() interviews!: any[]; 
-  @Output() interviewSelected = new EventEmitter<any>();
+  @Input() interviews: IInterview[] = []; 
+  @Output() interviewSelected = new EventEmitter<IInterview>();
 
   //method returns the number of days between most recent interview and current date
   //this number will be the number of pixels from the top 
   //goal is to have the interivews separated between each other as the days difference 
   calculatePosition(currentDate: string): number {
-    const mostrecentI = this.interviews[0].date;
-    if (mostrecentI == currentDate) {
+    const mostRecentI = this.interviews?.[0]?.date;
+    if (mostRecentI == currentDate) {
       return 0; 
     }
 
       const currentDateObj = new Date(currentDate);
-      const mostrecentIObj = new Date(mostrecentI);
+      const mostRecentIObj = new Date(mostRecentI);
       //console.log(currentDate);
       //console.log(mostrecentIObj);
       // Calculate the difference in days
-      const timeDifference = mostrecentIObj.getTime() - currentDateObj.getTime() ;
+      const timeDifference = mostRecentIObj.getTime() - currentDateObj.getTime() ;
       const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
       //console.log(daysDifference);
 

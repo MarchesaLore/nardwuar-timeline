@@ -1,7 +1,9 @@
+/* Styles for h1 element */
 h1 {
   text-align: center;
 }
 
+/* Styles for the timeline page container */
 .timeline-page-container {
   width: 100%;
   display: grid;
@@ -14,16 +16,19 @@ h1 {
   }
 }
 
+/* Styles for the selected video section */
 .selected-video {
   text-align: center;
   position: sticky;
   right: 0;
   width: 100%;
   padding-bottom: 20px;
+
   @media (min-width: 900px) {
     padding: 50px 0;
   }
 
+  /* Styles for paragraphs, headings, and images inside selected video */
   p, h2, h3, img {
     margin: auto;
     text-align: center;
@@ -31,6 +36,7 @@ h1 {
   }
 }
 
+/* Styles for desktop-only elements */
 .desktop-only {
   display: none;
 
@@ -39,18 +45,21 @@ h1 {
   }
 }
 
+/* Styles for mobile-only elements */
 .mobile-only {
   display: none;
 
   @media (max-width: 900px) {
     display: block;
 
+    /* Styles for iframes inside mobile-only */
     iframe {
       max-width: 100%;
     }
   }
 }
 
+/* Styles for the timeline container */
 .timeline-container {
   position: relative;
   overflow: hidden;
@@ -70,24 +79,25 @@ h1 {
   }
 }
 
+/* Styles for styled scrollbars */
 .styled-scrollbars {
-  /* Foreground, Background */
   scrollbar-color: #999 #333;
 }
 
 .styled-scrollbars::-webkit-scrollbar {
-  width: 10px; /* Mostly for vertical scrollbars */
-  height: 10px; /* Mostly for horizontal scrollbars */
+  width: 10px;
+  height: 10px;
 }
 
-.styled-scrollbars::-webkit-scrollbar-thumb { /* Foreground */
+.styled-scrollbars::-webkit-scrollbar-thumb {
   background: #999;
 }
 
-.styled-scrollbars::-webkit-scrollbar-track { /* Background */
+.styled-scrollbars::-webkit-scrollbar-track {
   background: #333;
 }
 
+/* Styles for legend */
 .legend {
   color: #aaa;
   text-align: center;
