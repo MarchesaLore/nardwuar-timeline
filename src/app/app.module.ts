@@ -10,6 +10,8 @@ import { InterviewComponent } from './interviews/interview.component';
 import { YoutubeEmbedComponent } from './youtubevideo/youtubevideo.component';
 import { RandomFactsComponent } from './random-facts/random-facts.component';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from './menu/menu.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -20,13 +22,15 @@ import { FormsModule } from '@angular/forms';
     TimelinePageComponent,
     InterviewComponent,
     YoutubeEmbedComponent,
-    RandomFactsComponent
+    RandomFactsComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   exports: [    
     YoutubeEmbedComponent

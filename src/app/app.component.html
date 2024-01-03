@@ -1,16 +1,7 @@
-
-
-<nav>
-  <div class='container'>
-    <a class='navbar-brand' routerLink='/welcome'><img src="assets/bg_home_banner.jpg" alt="Nardwuar the human serviette"></a>
-    <ul class='nav'>
-      <li><a class='nav-link' routerLinkActive='active' routerLink='/welcome'>Welcome</a></li>
-      <li><a class='nav-link' routerLinkActive='active' routerLink='/timeline'>Timeline</a></li>
-      <li><a class='nav-link' routerLinkActive='active' routerLink='/fun-facts'>Random Facts</a></li>
-    </ul>
-  </div>
-</nav>
-<router-outlet></router-outlet>
+<app-menu></app-menu>
+<div class="main">
+  <router-outlet></router-outlet>
+</div>
 <footer>
   <div class='container'>
     <div>
