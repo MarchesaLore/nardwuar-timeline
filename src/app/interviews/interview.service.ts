@@ -61,7 +61,7 @@ export class InterviewService {
           let artiststr = this.cleanTitle(item.snippet.title);
           return {
             id: index + 1,
-            artist: artiststr,
+            artist: ''+artiststr,
             date: this.formatDate(item.snippet.publishedAt),
             videoUrl: item.id.videoId
           };

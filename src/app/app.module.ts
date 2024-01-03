@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { TimelinePageComponent } from './timeline/timeline-page.component';
 import { InterviewComponent } from './interviews/interview.component';
 import { YoutubeEmbedComponent } from './youtubevideo/youtubevideo.component';
+import { RandomFactsComponent } from './random-facts/random-facts.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -17,11 +19,13 @@ import { YoutubeEmbedComponent } from './youtubevideo/youtubevideo.component';
     AboutComponent,
     TimelinePageComponent,
     InterviewComponent,
-    YoutubeEmbedComponent
+    YoutubeEmbedComponent,
+    RandomFactsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     AppRoutingModule
   ],
   exports: [    
