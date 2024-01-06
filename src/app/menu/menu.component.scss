@@ -37,6 +37,10 @@ nav{
                 max-height: 200px;
                 padding-top: 10px;
                 opacity: 1;
+                @media (max-width: 768px) {
+                    max-height: 130px;
+                    padding-top: 0;
+                }
                 &.hidden{
                     display: none;  
                     opacity: 0;
