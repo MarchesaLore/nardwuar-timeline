@@ -1,13 +1,12 @@
 <!-- welcome.component.html -->
 <div class="container">
-    <div *ngFor="let section of sections; let i = index" class="section">
-      <div class="text-section">
-        <h3>{{ section.title }}</h3>
-        <p>{{ section.content }}</p>
-      </div>
-      <div class="image-section">
-        <img src="{{ section.image }}" alt="{{ section.alt }}">
-      </div>
+  <div *ngFor="let section of sections; let i = index" class="section" id="section-{{i}}" [ngClass]="section.animate?'animate':''">
+    <div class="text-section">
+      <h3>{{ section.title }}</h3>
+      <p>{{ section.content }}</p>
+    </div>
+    <div class="image-section">
+      <img src="{{ section.image }}" alt="{{ section.alt }}">
     </div>
   </div>
-  
+</div>
