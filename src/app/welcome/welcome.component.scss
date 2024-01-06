@@ -46,8 +46,22 @@
       
       &:nth-child(even){
         flex-direction: row-reverse;
+        @media (max-width: 900px) {
+          flex-direction: column;
+        }
         .image-section {
             object-position: top center;
+        }
+      }
+
+      
+      @media (max-width: 900px) {
+        flex-direction: column;
+        margin-bottom: 20px;
+        .image-section, .text-section{  
+          width: 100%;
+          margin: 0;
+          padding: 0 30px;
         }
       }
 
