@@ -45,7 +45,7 @@ export class WelcomeComponent {
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
     this.sections.forEach((section, index) => {
-      section.animate = false;
+      //section.animate = false;
       const element = document.getElementById(`section-${index}`);
       if (this.isElementInViewport(element)) {
         console.log(`section-${index} is in view`);

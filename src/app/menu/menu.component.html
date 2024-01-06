@@ -2,10 +2,12 @@
 
 <nav class="sticky" [className]="isSticky?'sticky':''" id="navbar">
     <div class='container'>
+
       <a class='navbar-brand' routerLink='/welcome'>
         <img src="assets/bg_home_banner.jpg" alt="Nardwuar the human serviette" [className]="isSticky?'hidden':''">
         <img src="assets/logo-h.jpg" alt="Nardwuar the human serviette" [className]="isSticky?'':'hidden'">
       </a>
+
       <div class="mobile-only">
           <button class="mobile-menu-icon" (click)="showhideMenu()" [class.open]="isMenuVisible">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 menu-icon">
@@ -24,6 +26,8 @@
         <li><a class='nav-link' routerLinkActive='active' routerLink='/timeline'>Timeline</a></li>
         <li><a class='nav-link' routerLinkActive='active' routerLink='/fun-facts'>Random Facts</a></li>
       </ul>
+      
+      <div class="mobile-menu-bg" [class.active]="isMenuVisible" (click)="showhideMenu()"></div>
+    
     </div>
-    <div class="mobile-menu-bg" [class.active]="isMenuVisible" (click)="showhideMenu()"></div>
   </nav>
